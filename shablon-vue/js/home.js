@@ -76,49 +76,49 @@ export default{
                     "img":"",
                     "stage":"Стаж:",
                     "position":"Должность:",
-                    "sphere":"Чем заниимается",
+                    "sphere":"Чем занимается",
                 },
                 {
                     "name":"Имя",
                     "img":"",
                     "stage":"Стаж:",
                     "position":"Должность:",
-                    "sphere":"Чем заниимается",
+                    "sphere":"Чем занимается",
                 },
                 {
                     "name":"Имя",
                     "img":"",
                     "stage":"Стаж:",
                     "position":"Должность:",
-                    "sphere":"Чем заниимается",
+                    "sphere":"Чем занимается",
                 },
                 {
                     "name":"Имя",
                     "img":"",
                     "stage":"Стаж:",
                     "position":"Должность:",
-                    "sphere":"Чем заниимается",
+                    "sphere":"Чем занимается",
                 },
                 {
                     "name":"Имя",
                     "img":"",
                     "stage":"Стаж:",
                     "position":"Должность:",
-                    "sphere":"Чем заниимается",
+                    "sphere":"Чем занимается",
                 },
                 {
                     "name":"Имя",
                     "img":"",
                     "stage":"Стаж:",
                     "position":"Должность:",
-                    "sphere":"Чем заниимается",
+                    "sphere":"Чем занимается",
                 },
             ]
         }
 
     },
     template:`<nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="container row row-cols-1 row-cols-md-3"> 
+    <div class="container  row row-cols-1 row-cols-md-3"> 
       <div class="logo"></div>
       
       <a class="navbar-brand" href="tel:+79308351978">+7 930 835 19 78</a>
@@ -129,8 +129,8 @@ export default{
     </div>
   </nav>
         
-  <section class="py-5 overflow-hidden">
-    <div class="container">
+  <section class="pb-5 pt-5">
+    <div class="container mt-5 mb-5 pb-5">
       
       <div class="row align-items-center">
         <div class="position-relative col-12 col-lg-6 order-last order-lg-first mt-5 mt-lg-0">
@@ -146,7 +146,7 @@ export default{
                 <span class="me-4 text-primary">
                   <div class="verif"></div>
                 </span>
-                <div>
+                <div class="prem">
                   <h5>{{options.name}}</h5>
                   <p class="mb-0 text-muted lh-lg">{{options.description}}</p>
                 </div>
@@ -158,8 +158,8 @@ export default{
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
+  <section class="pb-5 pt-5">
+    <div class="container mt-5 mb-5 pb-5">
       <h1 class="text-center py-5">Секция №3</h1>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col" v-for="card in cards">
@@ -177,8 +177,8 @@ export default{
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
+  <section class="pb-5 pt-5">
+    <div class="container mt-5 mb-5 pb-5">
       <h1 class="text-center py-5">Секция №4</h1>
       <div class="card-group d-grid">
       
@@ -196,9 +196,9 @@ export default{
 
       </div>
   </section>
-  <section>
-    <div class="container py-5">
-      <form class="d-flex flex-column align-items-center">
+  <section class="pb-5 pt-5">
+    <div class="container">
+      <form class="row row-cols-1 row-cols-md-1 text-center">
         
         <div class="mb-3">
           <label for="validationCustom01" class="form-label">Имя</label>
@@ -211,8 +211,9 @@ export default{
           <input type="email" v-model="email" class="form-control" id="validationCustom02" >
           
         </div>
-        
-        <button type="button" class="btn btn-primary" @click="Send()">Подписаться</button>
+        <div class="mb-3">
+        <button type="button" class="btn btn-primary w-100" @click="Send()">Подписаться</button>
+        </div>
       </form>
     </div>
   </section>`,

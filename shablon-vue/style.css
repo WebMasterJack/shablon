@@ -2,14 +2,19 @@
     width:100% !important;
     margin: 0 auto !important;
 }
+@font-face {
+    font-family: "custom";
+    src: url('/fonts/Overpass-VariableFont_wght.ttf');
+}
+
 *{
-    font-family: cursive;
+    font-family: 'custom',sans-serif;
 }
 .cards{
     place-content: space-around;
 }
 .logo{
-    background-image: url(https://cdn-icons.flaticon.com/png/512/2504/premium/2504848.png?token=exp=1638993603~hmac=583e06706fd1d655dffd30466daab48b);
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 10vh;
@@ -24,4 +29,13 @@
 .card-group{
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.card-img-top {
+    max-height: 300px;
+}
+@media screen and (max-width:350px) {
+    .card-group .card{
+        
+        max-width: 300px;
+    }
 }
