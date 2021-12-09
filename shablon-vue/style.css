@@ -1,0 +1,27 @@
+.container{
+    width:100% !important;
+    margin: 0 auto !important;
+}
+*{
+    font-family: cursive;
+}
+.cards{
+    place-content: space-around;
+}
+.logo{
+    background-image: url(https://cdn-icons.flaticon.com/png/512/2504/premium/2504848.png?token=exp=1638993603~hmac=583e06706fd1d655dffd30466daab48b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+}
+.verif{
+    background-image: url(/img/1828697.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+}
+.card-group{
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
